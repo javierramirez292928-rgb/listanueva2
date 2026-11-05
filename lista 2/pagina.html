@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Lista de Tareas</title>
+
+  <!-- Configuración PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e3a8a">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📌 Mi Lista de Tareas</h1>
+
+    <form id="task-form" class="input-group">
+      <input type="text" id="task-input" placeholder="Añadir una nueva tarea..." required autocomplete="off">
+      <button type="submit" class="btn-add">Agregar</button>
+    </form>
+
+    <!-- Lista en pantalla donde se agregan las tareas -->
+    <ul id="task-list"></ul>
+    
+    <p id="empty-msg" class="empty-message" style="display: none;">No tienes tareas pendientes.</p>
+  </div>
+
+  <!-- Script principal -->
+  <script src="app.js"></script>
+</body>
+</html>
